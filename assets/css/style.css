@@ -152,6 +152,7 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/assets/images/hero.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -211,6 +212,9 @@ header{
 /* Section Feature Component */
 /* ---------------------------------------------------- */
 
+.section{
+    padding: 80px 0;
+}
 .section-features{
     padding: 80px 0;
 }
@@ -253,14 +257,14 @@ header{
 
 .meal-image img:hover{
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
 /* work steps */
 
 .work-steps{
-    padding: 80px 0;
+    
     background-color: rgb(250, 245, 245);
     
 }
@@ -324,7 +328,7 @@ header{
 /* cities section */
 
 .cities-section{
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .box{
@@ -347,5 +351,150 @@ header{
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 95%;
+}
+
+
+/* testimonial section */
+
+
+.testimonial{
+    
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('/assets/images/back-customers.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+
+}
+
+
+blockquote{
+    font-size: 95%;
+    line-height: 145%;
+
+
+}
+
+blockquote::before{
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+    height:0;
+    
+
+}
+
+cite{
+    display: block;
+
+}
+
+cite img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+.plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #f4f4f4;
+}
+
+.plan-box div{
+    padding: 18px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    border: none;
+    margin-top: 10px;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 5px;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 100;
+    
+}
+
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box li{
+    font-size: 90%;
+    font-weight: 100;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgb(51, 50, 50);
+    padding: 50px;
+}
+
+.footer-nav,
+.social-links{
+    list-style: none;
+    font-size: 90%;
+    
+}
+
+.footer-nav li{
+    float: left;
+    margin-left: 15px;
+}
+
+.social-links li{
+    float: right;
+    margin-right: 15px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: rgb(141, 139, 139);
+    border: none;
+    transition: color 0.2s;
+
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: #fff;
+}
+
+footer p{
+    font-size: 80%;
+    text-align: center;
+    margin-top: 15px;
 }
 
