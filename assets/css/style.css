@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-html{
+html,body{
+    
     background-color: #ffffff;
     color: #555;
     font-family: 'Roboto', sans-serif;
@@ -149,11 +150,14 @@ h3{
 /* ---------------------------------------------------- */
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/assets/images/hero.jpg');
+    /* width: 100%; */
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100vh;
+    background-attachment: fixed;
+    
 }
 
 .hero-text-images{
@@ -162,6 +166,10 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 
 
@@ -176,6 +184,15 @@ header{
     height: 100px;
     float: left;
     margin-top: 30px;
+}
+
+.logo-black{
+    display: none;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5px
+    
 }
 
 .main-navbar{
@@ -204,6 +221,40 @@ header{
 .main-navbar li a:hover,
 .main-navbar li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+
+/* sticky Navigation */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.945);
+    z-index: 100000;
+}
+
+
+
+.sticky .main-navbar{
+    margin-top: 15px;
+}
+
+.sticky .logo{
+    display: none;
+}
+
+.sticky .logo-black{
+    display: block;
+}
+
+.sticky .main-navbar li a:link,
+.sticky .main-navbar li a:visited {
+    
+    color: #555;
+    
+    
 }
 
 
